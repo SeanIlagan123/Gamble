@@ -29,6 +29,6 @@ public class Character {
 
     @Override
     public String toString() {
-        return "You got the character " + name;
+        return "You got the character " + name + " this is a " + rarity + " star.";
     }
 }

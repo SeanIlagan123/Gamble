@@ -8,7 +8,7 @@ public class Summons {
         System.out.println(rolls);
     }
 
-    private static List<Character> summoning(int num_rolls, Gacha gacha) {
+    private static List<Character> summoning(int num_rolls, Gacha gacha) { // function to summon characters
         List<Character> Summons = new ArrayList<Character>();
         for (int i = 0; i < num_rolls; i++) {
             roll(gacha, Summons);
@@ -16,7 +16,7 @@ public class Summons {
         return Summons;
     }
 
-    private static int pullRate() { // A biased randomiser for each rarity
+    private static int pullRate() { // A biased randomiser for each rarity. I used random to make random.
         int pullRarity;
         Random rand = new Random();
         int chance = rand.nextInt(100); // get a random number between 0-99
@@ -33,17 +33,14 @@ public class Summons {
         }
     }
 
-    private static void roll(Gacha pulls, List<Character> summons) { // This function will 
+    private static void roll(Gacha pulls, List<Character> summons) { // This function will call in the biased function and will add to the summoned list based off the result.
         Random randomizer = new Random();
         if (pullRate() == 5) {
             summons.add(pulls.getFive_summon().get(randomizer.nextInt(pulls.getFive_summon().size())));
-            System.out.println("5");
         } else if (pullRate() == 4) {
             summons.add(pulls.getFour_summon().get(randomizer.nextInt(pulls.getFour_summon().size())));
-            System.out.println("4");
         } else {
             summons.add(pulls.getThree_summon().get(randomizer.nextInt(pulls.getThree_summon().size())));
-            System.out.println("3");
         }
     }
 }
