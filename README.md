@@ -2,6 +2,9 @@
 Run main program from Summons.Java
 
 # TODO
-[x] Can randomly pull characters
-[] Make biased rates/probabilities
-[] Read from a file to declare object characters
+
+<ul>
+  <li>Can randomly pull characters ./</li>
+  <li>Make biased rates/probabilities</li>
+  <li>Read from a file to declare object characters</li>
+</ul>
