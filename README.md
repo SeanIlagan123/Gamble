@@ -5,6 +5,6 @@ Run main program from Summons.Java
 
 <ul>
   <li>Can randomly pull characters [x]</li>
-  <li>Make biased rates/probabilities []</li>
-  <li>Read from a file to declare object characters []</li>
+  <li>Make biased rates/probabilities [ ]</li>
+  <li>Read from a file to declare object characters [ ]</li>
 </ul>
